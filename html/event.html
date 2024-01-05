@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+</head>
+
+<body>
+<button id="span"> span</button>    
+<button id="strong">strong</button>    
+<button id="mark">mark</button>    
+
+<script>
+    const spanBt = document.getElementById("span")
+    const strongBt = document.getElementById("strong")
+    const markBt = document.getElementById("mark")
+
+
+   
+
+    const handleClick = function(event){
+       if(event.target.id == "span"){
+        const span = document.createElement("span")
+        span.textContent = "span"
+        document.body.append(span)
+       }
+        }
+
+    spanBt.addEventListener("click", handleClick)
+    strongBt.addEventListener("click", handleClick)
+    markBt.addEventListener("click", handleClick)
+    
+</script>
+</body>
+</html>

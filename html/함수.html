@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id= "container"></div>
+    <script>
+
+        function createP(content, color){
+            const p = document.createElement("p")
+            p.textContent = content
+            p.style.color = color
+            document.querySelector("#container").append(p)
+        }
+        function sayYes(){
+        console.log(1)
+            alert("yes")
+        }
+
+       
+
+        const sayNo = function(){
+            alert("no")
+            console.log(2)
+            
+        }
+       
+
+        createP("첫번쨰","red")
+       createP("두번쨰","green")
+         createP("세dasdasda번쨰")
+         createP("세번쨰")
+         createP("네번쨰")
+         createP("네번쨰")
+
+         function sample(){
+            
+            document.querySelector("#container").textContent = "안녕"            
+
+         }
+         
+    </script>
+    
+</body>
+</html>
